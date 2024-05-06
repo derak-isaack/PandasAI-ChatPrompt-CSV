@@ -17,7 +17,7 @@ LLM_API_KEY = os.environ['OPENAI_API_KEY']
 
 llm = OpenAI(api_token=LLM_API_KEY)
 
-upload = st.file_uploader("Upload your csv file for analysis", type=['csv'])
+upload = st.file_uploader("Upload your csv file for analysis", type=['csv'], accept_multiple_files=True)
 
 
 if upload is not None:
